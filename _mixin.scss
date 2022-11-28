@@ -1,0 +1,33 @@
+@mixin btn {
+        margin-top: 106px;
+        margin-bottom: 259px;
+        width: 236px;
+        height: 52px;
+        background: #2091F9;
+        border-radius: 35px;
+        border: 1px solid  #2091F9;
+        cursor: pointer;
+        color: white;
+        span{
+            padding: 16px 0px;
+            font-family: "Graphik", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+            font-weight: bold;
+        }
+}
+@mixin input {
+    width: 273px;
+    height: 54px;
+    border-radius: 15px;
+    border: 1px solid #F4F4F4;
+}
+
+@mixin for-phone{
+    @media screen and (max-width:375px) {
+        @content
+    }
+}

@@ -1,0 +1,93 @@
+.header{
+    background: url("img/home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            display: flex;
+            @include for-phone{
+                @media screen and (max-width:375px) {
+                    display: none;
+                }
+            }
+            li {
+               color: white;
+               margin-right: 40px;
+               font-family: "Graphik", sans-serif;
+               font-size: 15px;
+               font-weight: 400;
+               line-height: 28px;
+           }
+        }
+        .img{
+            img{
+                margin-right: 650px;
+                @include for-phone{
+                        margin: 0;       
+                }
+            }
+        }
+        .burger{
+            display: none;
+            @include for-phone{       
+                    display: block;
+            }
+        }
+        .social_icons{
+            @include for-phone{
+                @media screen and (max-width:375px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    h1{
+        font-family: "Graphik", sans-serif;
+        font-size: 74px;
+        font-weight: 700;
+        line-height: 84px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        color: white;
+        padding-top: 159px;
+        @include for-phone{
+            font-size: 48px;
+            line-height: 55px;
+        }
+    }
+    h4{
+        font-family: "Graphik", sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        color: white;
+        padding-top: 27px;
+        @include for-phone{
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+    button{
+       @include btn;
+    }
+}
+
+/* @media (max-width: 375px) {
+    nav{ 
+        display: none;
+        ul{
+            display: none;
+        }
+        .social_icons{
+            display: none;
+        }
+    }
+} */

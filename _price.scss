@@ -1,0 +1,126 @@
+.pricing{
+    background-color: #252B42;
+    margin-top: 226px;
+    text-align: center;
+    h2{
+        font-family: "Graphik", sans-serif;
+        padding-top: 110px;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 55px;
+        color: white;
+        letter-spacing: 0.20000000298023224px;
+    }
+    h4{
+        font-family: "Graphik", sans-serif;
+        font-size: 28px;
+        padding-top: 27px;
+        font-weight: 400;
+
+        line-height: 40px;
+        color: white;
+        letter-spacing: 0.20000000298023224px;
+    }
+    .pricing_blocks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 90px;
+        padding-bottom: 100px;
+        cursor: pointer;
+        @include for-phone{
+            @media only screen and (max-width:375px) {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+        .pricing_block{
+            border: 1px solid white;
+            margin-left: 40px;
+            padding: 171px 65px;
+            background-color: white;
+            border-radius: 10px;
+            @include for-phone{
+                padding: 140px 50px;
+                margin-left: 2px;
+
+             }
+            h3{
+                font-family: "Graphik", sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0.10000000149011612px;
+            }
+            h5{
+                font-family: "Graphik", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23px;
+                padding-top: 3px;
+                letter-spacing: 0.10000000149011612px;
+            }
+            img{
+                padding-top: 18px;
+            }
+            ul{
+                padding-top: 50px;
+                li{
+                    padding-top: 20px;
+                }
+            }
+            button{
+                width: 236px;
+                height: 52px;
+                background: #2091F9;
+                border-radius: 35px;
+                border: 1px solid  #2091F9;
+                cursor: pointer;
+                color: white;
+                margin-top: 40px;
+                span{
+                    padding: 16px 0px;
+                    font-family: "Graphik", sans-serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.20000000298023224px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+        .block2{
+            padding: 230px 65px;
+            border: 1px solid #DEDEDE;
+            background-color: #2091F9;
+            @include for-phone{
+                padding: 140px 50px;
+                margin-left: 2px;
+                margin-top: 40px;
+             }
+            h3{
+                color: white;
+            }
+            h5{
+                color: white;
+            }
+            .ull{
+                color: white;
+            }
+            button{
+                background: #FFFFFF;
+                border: 1px solid  #FFFFFF;
+                color: white;
+                span{
+                    color: #2091F9;
+                }
+            }
+        }
+        .block3{
+            @include for-phone{
+                margin-top: 40px;
+             }
+        }
+    }
+}

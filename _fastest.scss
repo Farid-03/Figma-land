@@ -1,0 +1,90 @@
+.fastest{
+    padding-top: 200px;
+    text-align: center;
+    .fastest_content{
+        display: flex;
+        justify-content: space-evenly;
+        .fastest_left{
+            h2{
+                font-family: "Graphik", sans-serif;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 55px;
+                letter-spacing: 0.20000000298023224px;
+                /* display: flex;
+                justify-content: flex-start; */
+                width: 335px;
+                height: 110px;
+                text-align: start;
+                @include for-phone{
+                    text-align: center;
+                    width: 300px;
+                    line-height: 40px;
+                    margin-left: 50px;
+                }
+            }
+            h4{
+                font-family: "Graphik", sans-serif;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 40px;
+                letter-spacing: 0.20000000298023224px;
+                padding-top: 27px;
+                width: 532px;
+                height: 80px;
+                text-align: start;
+                @include for-phone{
+                    width: 265px;
+                    height: 80px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-left: 70px;
+                    margin-top: 20px;
+                    letter-spacing: 0.20000000298023224px;
+                }
+            }
+            button{
+                @include btn;
+                display: flex;
+                justify-content: flex-start;
+                @include for-phone{
+                    margin-left: 85px; 
+                    margin-bottom: 25px;
+                }
+                span{
+                    padding: 18px 55px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .fastest_right{
+            @include for-phone{
+                img{
+                    height: 182.57333374023438px;
+                    width: 292.1458435058594px;
+                    text-align: center;
+                    /* margin-left: 150px; */
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .fastest_content{
+        flex-direction: column;
+        .fastest_left{
+            h2{
+                // text-align: center;
+               /*  display: flex;
+                justify-content: center; */
+
+            }
+            h4{
+                text-align: center;
+            }
+        }
+    }
+}

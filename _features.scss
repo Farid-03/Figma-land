@@ -1,0 +1,76 @@
+.features{
+    padding-top: 126px;
+    padding-bottom: 126px;
+    text-align: center;
+    background-color: white;
+    .features_content{
+        h2{
+            font-family: "Graphik", sans-serif;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 55px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+            padding-bottom: 27px;
+        }
+        h4{
+            font-family: "Graphik", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+        }
+        .features_blocks{
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 98px;
+            .features_block{
+                img{
+                    padding-bottom: 28px;
+                }
+                h3{
+                    font-family: "Graphik", sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0.10000000149011612px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+                p{
+                    font-family: "Graphik", sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    letter-spacing: 0.20000000298023224px;
+                    text-align: center;
+                    width: 231px;
+                    height: 100px;
+                    color: #374754;
+                    @include for-phone{ 
+                            margin-left: 75px;
+                    }
+                }
+            }
+        }
+    }
+    .features_screen{
+        text-align: center;
+        padding-top: 132px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .features_screen{
+        img{
+            width: 385px;
+            height: 215px;
+        }
+    }
+    .features_blocks{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}

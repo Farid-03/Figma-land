@@ -1,0 +1,116 @@
+.contact{
+    margin-top: 213px;
+    margin-bottom: 102px;
+    text-align: center;
+    .contact_content{
+      h2{
+            font-family: "Graphik", sans-serif;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 55px;
+            letter-spacing: 0.20000000298023224px;
+            @include for-phone{
+            font-size: 35px;
+            line-height: 45px;
+             }
+            
+      }  
+      h4{
+            font-family: "Graphik", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 40px;
+            padding-top: 27px;
+            letter-spacing: 0.20000000298023224px;
+            @include for-phone{
+                font-size: 20px;
+                line-height: 25px;
+             }
+           
+      }
+      .contact_flex{
+          display: flex;
+          justify-content: space-evenly;
+          padding-top: 185px;
+          @include for-phone{
+            flex-direction: column-reverse;
+        }
+          .contact_left{
+              border: 1px solid grey;
+              padding: 0px 34px;
+              border-radius: 15px;
+          }
+          .contact_left h3{
+              padding-top: 52px;
+          }
+          .contact_left input{
+              display: block;
+              @include input;
+              margin-top: 45px;
+          }
+          .contact_left textarea{
+            width: 273px;
+            height: 89px;
+            padding-top: 10px;
+            margin-top: 45px;
+            border: 1px solid #F4F4F4;
+          }
+          .contact_left button{
+            display: block;
+            width: 145px;
+            height: 56px;
+            margin-top: 45px;
+            margin-bottom: 52px;
+            background: #2091F9;
+            border-radius: 35px;
+            border: 1px solid  #2091F9;
+            cursor: pointer;
+            color: white;
+            span{
+                padding: 16px 0px;
+                font-family: "Graphik", sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+        .contact_blocks{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-bottom: 70px;
+            @include for-phone{
+                padding-bottom: 5px;
+            }
+            .contact_block{
+                margin-left: 15px;
+                img{
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        .contact_img{
+            @include for-phone{
+                @media only screen and (max-width:375px) {
+                    display: none;
+                }
+            }
+        }
+        .contact_social-icons{
+            padding-top: 74px;
+            display: flex;
+            justify-content: flex-start;
+            @include for-phone{
+                justify-content: center;
+                padding-bottom: 30px;
+            }
+            img{
+                padding-right: 30px;
+            }
+        }
+      }
+    }
+}
